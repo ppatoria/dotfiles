@@ -1,0 +1,29 @@
+cd ~/Documents/
+;s
+mkdir documents
+ll
+ls -l
+mv *.zip documents/
+ls
+mv CS-Pune/  ~/Documents/documents/
+mv US-Visa/  ~/Documents/documents/
+mv ExperienceLetter-compressed.pdf  ./documents/
+ll
+ls -l
+mv Credit-Suisse-Poland.pdf ./documents/
+ls
+ls -l
+cd finra-exams/
+ls
+cd 57
+ls
+cd ~/
+cd ~git init
+rm -rf ~/.git 
+cd ~/dev/my/scripts/
+ls
+manage_dotfiles.py
+touch manage_dotfiles.py
+chmod 777 manage_dotfiles.py 
+python3 manage_dotfiles.py 
+python3 manage_dotfiles.py 
