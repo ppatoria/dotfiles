@@ -116,5 +116,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias em='emacsclient -n -c'
 export GIT_OAUTH2_TOKEN=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
+
+alias e='emacsclient -n -c -a ""'
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
