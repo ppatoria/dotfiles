@@ -45,24 +45,37 @@ esac
 # should be on the output of commands, not on the prompt
 #force_color_prompt=yes
 
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
+# if [ -n "$force_color_prompt" ]; then
+#     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+# 	# We have color support; assume it's compliant with Ecma-48
+# 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+# 	# a case would tend to support setf rather than setaf.)
+# 	color_prompt=yes
+#     else
+# 	color_prompt=
+#     fi
+# fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
+# if [ "$color_prompt" = yes ]; then
+#     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# else
+#     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+# fi
+# unset color_prompt force_color_prompt
+# multi-line git aware bash command promp
+function parse_git_branch {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
+}
 
+function parse_git_status {
+    [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
+}
+
+function prompt_command {
+    PS1="\[\033[1;32m\]\u@\h:\w\[\033[0m\] \$(parse_git_branch)\[\033[1;31m\]\$(parse_git_status)\[\033[0m\]\n\$ "
+}
+
+PROMPT_COMMAND=prompt_command
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -83,7 +96,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
+alias python=python3
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -127,3 +140,30 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export PIP_BREAK_SYSTEM_PACKAGES=1
+
+# Created by `pipx` on 2023-07-16 03:19:26
+export PATH="$PATH:/home/ppatoria/.local/bin"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ppatoria/.local/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ppatoria/.local/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ppatoria/.local/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ppatoria/.local/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export QT_QPA_PLATFORM_PLUGIN_PATH=/snap/qt515-core20/28/opt/qt515/plugins/platforms
+export PATH=/home/ppatoria/.local/miniconda3/bin:/home/ppatoria/.local/miniconda3/condabin:/home/ppatoria/.pyenv/plugins/pyenv-virtualenv/shims:/home/ppatoria/.pyenv/shims:/home/ppatoria/.pyenv/bin:/home/ppatoria/.pyenv/plugins/pyenv-virtualenv/shims:/home/ppatoria/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/ppatoria/.local/bin:/home/ppatoria/.local/bin:/home/ppatoria/Downloads/rclone-v1.63.0-linux-amd64
+
+export PATH="$HOME/plantuml:$PATH"

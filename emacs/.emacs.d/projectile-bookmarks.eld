@@ -1,1 +1,1 @@
-("~/Documents/finra-exams/")
+("~/Documents/dotfiles/" "~/dev/quick/")

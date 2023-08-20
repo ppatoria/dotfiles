@@ -296,11 +296,10 @@
   :config
   (org-superstar-mode))
 
-(message "================================================================================")
-  :ensure t
-  :config
-  (setq org-indent-mode 'org-modern-indent)
-  (org-modern-mode))
+  ;; :ensure t
+  ;; :config
+  ;; (setq org-indent-mode 'org-modern-indent)
+  ;; (org-modern-mode))
 ;; (package-disable 'conflicting-package)
 (setq org-indent-mode 'org-modern-indent)
 (setq org-indent-width 4)
@@ -562,18 +561,304 @@
 (setq ediff-diff-program "meld")
 (setq ediff-diff3-program "meld")
 
-
 (message "================================================================================")
-(message "configure git-cola integration")
+(message "configure EAF")
 (message "================================================================================")
+;;(add-to-list 'load-path "~/.local/miniconda3/envs/eaf/lib/python3.9/site-packages/eaf/")
+;;(require 'eaf)
+;; (require 'emacswiki-elisp-format)
+(use-package myeaf
+  :ensure t
+  :config
+  (setq eaf-buffer-file-name "~/.emacs.d/eaf.el")
+  (setq eaf-browser-command "firefox")
+  (setq eaf-pdf-viewer-command "zathura")
+  (setq eaf-git-command "git")
+  (setq eaf-file-manager-command "ranger")
+  (setq eaf-terminal-command "alacritty")
+  (setq eaf-org-previewer-command "emacsclient -n -a '(org-mode)'")
+  (setq eaf-system-monitor-command "htop")
+  (setq eaf-mermaid-command "mermaid")
+  (eaf-initialize))
 
-;; Integrate git-cola for Git GUI
-(defun my-git-cola ()
-  (interactive)
-  ;;(start-process "git-cola" nil "git" "cola"))
-(global-set-key (kbd "C-c g") 'my-git-cola)
-;;(setq magit-git-executable "git-cola")
+;; (use-package eaf
+;;   :load-path "~/.emacs.d/elpa/eaf-<version>/"
+;;   :defer 2
+;;   :custom
+;;   (eaf-browser-continue-where-left-off t)
+;;   (eaf-browser-enable-adblocker t)
+;;   (eaf-browser-default-zoom "-")
+;;   (eaf-browser-dark-mode "follow")
+;;   (eaf-pdf-dark-mode "follow")
+;;   (eaf-terminal-font-size "14")
+;;   (eaf-find-alternate-file-in-dired t)
+;;   (eaf-evil-leader-key "SPC")
+;;   :config
+;;   (eaf-setq eaf-browser-dark-mode "follow")
+;;   (eaf-setq eaf-pdf-dark-mode "follow")
+;;   (eaf-setq eaf-browser-default-zoom "2.0")
+;;   (eaf-bind-key scroll_up "C-n" eaf-pdf-viewer-keybinding)
+;;   (eaf-bind-key scroll_down "C-p" eaf-pdf-viewer-keybinding)
+;;   (eaf-bind-key take_photo "p" eaf-camera-keybinding)
+;;   (eaf-bind-key nil "M-q" eaf-browser-keybinding)
+;;   (setq eaf-browser-search-engines
+;; 	'(("Google" . "https://www.google.com/search?q=%s")
+;;           ("Bing" . "https://www.bing.com/search?q=%s")
+;;           ("DuckDuckGo" . "https://duckduckgo.com/?q=%s")))
+;;   (setq eaf-browser-default-search-engine "Google")
+;;   :after eaf
+;;   :demand t)
+;;   :commands (eaf-open-browser
+;;              eaf-open-pdf
+;;              eaf-open-git
+;;              eaf-open-file-manager
+;;              eaf-open-terminal
+;;              eaf-preview-org
+;;              eaf-open-system-monitor
+;;              eaf-open-mermaid)
+;;   :custom
+;;   (eaf-browser-remember-history t)
+;;   (eaf-browser-default-zoom 1.5)
+;;   (eaf-browser-dark-mode "follow")
+;;   (eaf-pdf-dark-mode "follow")
+;;   (eaf-terminal-font-size "12")
+;;   :config
+;;   (eaf-setq eaf-browser-enable-adblocker t)
+;;   (eaf-setq eaf-browser-enable-smooth-scrolling t)
+;;   (eaf-setq eaf-pdf-dark-mode "follow")
+;;   (eaf-setq eaf-browser-dark-mode "follow")
+;;   (eaf-setq eaf-browser-chrome-command "google-chrome-stable")
+;;   (eaf-setq eaf-terminal-font-size "12")
+;;   :init
+;;   (require 'eaf-browser)
+;;   (require 'eaf-pdf-viewer)
+;;   (require 'eaf-git)
+;;   (require 'eaf-file-manager)
+;;   (require 'eaf-terminal)
+;;   (require 'eaf-org-previewer)
+;;   (require 'eaf-system-monitor)
+;;   (require 'eaf-mermaid)) 
 
+;; (use-package eaf-pdf-viewer
+;;   :after eaf
+;;   :config
+;;   (setq eaf-pdf-dark-mode "true")
+;;   (setq eaf-pdf-dark-mode "follow")
+;;   :demand t)
+
+;; (use-package eaf-git
+;;   :after eaf
+;;   :custom
+;;   (eaf-git-evil-leader-key "g")
+;;   :config
+;;   (setq eaf-git-dired-touch-evil-leader-key "G")
+;;   :demand t)
+
+;; (use-package eaf-file-manager
+;;   :after eaf
+;;   :demand t)
+
+;; (use-package eaf-terminal
+;;   :after eaf
+;;   :demand t
+;;   :config
+;;   (setq eaf-terminal-font-size "14"))
+
+;; (use-package eaf-org-previewer
+;;   :after eaf
+;;   :config
+;;   (setq eaf-org-previewer-keybinding-prefix "C-c C-o")
+;;   :demand t)
+
+;; (use-package eaf-system-monitor
+;;   :after eaf
+;;   :demand t)
+
+;; (use-package eaf-mermaid
+;;   :after eaf
+;;   :demand t)
+
+  
+  
+  
+  
+  
+  
+
+
+;; (message "================================================================================")
+;; (message "configure git-cola integration")
+;; (message "================================================================================")
+
+;; ;; Integrate git-cola for Git GUI
+;; (defun my-git-cola ()
+;;   (interactive)
+;;   ;;(start-process "git-cola" nil "git" "cola"))
+;; (global-set-key (kbd "C-c g") 'my-git-cola)
+;; ;;(setq magit-git-executable "git-cola")
+
+;; (message "================================================================================")
+;; (message "configure treemacs")
+;; (message "================================================================================")
+;; (use-package treemacs
+;;   :ensure t
+;;   :defer t
+;;   :init
+;;   (setq treemacs-no-png-images t) ; use text icons instead of PNGs
+;;   :config
+;;   (treemacs-git-mode 'deferred) ; enable Git support
+;;   (setq treemacs-follow-after-init t
+;;         treemacs-is-never-other-window nil
+;;         treemacs-silent-refresh t
+;;         treemacs-silent-filewatch t
+;;         treemacs-show-hidden-files nil
+;;         treemacs-goto-tag-strategy 'refetch-index ; update tags on the fly
+;;         treemacs-collapse-dirs 0)
+;;   (treemacs-resize-icons 18) ; set icon size
+;;   (treemacs-follow-mode t) ; enable follow mode
+;;   (treemacs-filewatch-mode t) ; enable file watch mode
+;;   (treemacs-fringe-indicator-mode t)) ; enable fringe indicators
+  ;; (treemacs-define-context-menu-action "Run rg here"
+  ;;   :icon "🔍"
+  ;;   (lambda (&rest _)
+  ;;     (let ((default-directory (treemacs-path-at-point)))
+  ;;       (grep-compute-defaults)
+  ;;       (rgrep (read-from-minibuffer
+  ;;               (format "Run rg on %s: " default-directory)
+  ;;               (car grep-find-history))
+  ;;              "*.txt"
+  ;;              default-directory))))
+  ;; ;; Define a custom action to run `fdfind` on a directory
+  ;; (treemacs-define-context-menu-action "Run fdfind here"
+  ;;   :icon "🔍"
+  ;;   (lambda (&rest _)
+  ;;     (let ((default-directory (treemacs-path-at-point)))
+  ;;       (counsel-fdfind))))
+  ;; :bind (:map treemacs-mode-map
+  ;;        ;; Bind the custom actions to keys
+  ;;        ("C-c r" . treemacs-run-rg)
+  ;;        ("C-c f" . treemacs-run-fdfind))))
+(treemacs)
+
+;; (use-package treemacs-projectile
+;;   :after treemacs projectile
+;;   :ensure t)
+
+;; (setq treemacs-show-cursor nil) ; disable the cursor line to show the scroll bar
+;; (define-key global-map (kbd "<f10>") (make-sparse-keymap))
+;; (define-key global-map (kbd "<f10> t") 'treemacs-toggle)
+;; (define-key global-map (kbd "<f10> o") 'other-window)
+
+
+;; (use-package evil :ensure t)
+;; (use-package treemacs-evil :ensure t)
+
+;; (with-eval-after-load 'evil
+;;   (evil-set-initial-state 'treemacs-mode 'emacs)
+;;   (evil-define-key 'emacs treemacs-mode-map
+;;     "h" 'treemacs-root-up
+;;     "l" 'treemacs-root-down
+;;     "J" 'treemacs-root-collapse
+;;     "K" 'treemacs-root-expand
+;;     "C-j" 'treemacs-select-next-window
+;;     "C-k" 'treemacs-select-previous-window
+;;     "C-h" 'evil-window-left
+;;     "C-l" 'evil-window-right
+;;     "q" 'treemacs-quit))
+
+;; (use-package magit :ensure t)
+;; (use-package treemacs :ensure t)
+;; (use-package treemacs-magit :ensure t)
+
+;; (with-eval-after-load 'treemacs
+;;   (defun my/treemacs-magit-setup ()
+;;     "Set up Treemacs-Magit."
+;;     (treemacs-load-theme)
+;;     (treemacs-git-mode 'extended)
+;;     (treemacs-follow-mode t)
+;;     (treemacs-filewatch-mode t)
+;;     (treemacs-fringe-indicator-mode t)
+;;     (treemacs-set-scope-type 'Projects))
+;;   (add-hook 'treemacs-mode-hook #'my/treemacs-magit-setup))
+
+;; (setq magit-completing-read-function 'ivy-completing-read
+;;       magit-repository-directories '(("~/projects" . 2))
+;;       magit-diff-refine-hunk t
+;;       magit-log-margin '(t "%Y-%m-%d %H:%M " magit-log-margin-width t 18))
+;; (require 'treemacs-magit)
+;; (setq treemacs-magit--display-in-mode-line t)
+;; (setq treemacs-magit--display-in-modeline t)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; (message "================================================================================")
+;; (message "configure treemacs")
+;; (message "================================================================================")
+;; (use-package treemacs
+;;   :ensure t)
+;; (require treemacs)
+;; (treemacs)
+
+;; (use-package treemacs-projectile
+;;   :after treemacs projectile
+;;   :ensure t)
+
+;; ;; (setq treemacs-show-cursor nil) ; disable the cursor line to show the scroll bar
+;; (define-key global-map (kbd "<f10>") (make-sparse-keymap))
+;; (define-key global-map (kbd "<f10> t") 'treemacs-toggle)
+;; (define-key global-map (kbd "<f10> o") 'other-window)
+
+
+;; (use-package evil :ensure t)
+;; (use-package treemacs-evil :ensure t)
+
+;; ;; (with-eval-after-load 'evil
+;; ;;   (evil-set-initial-state 'treemacs-mode 'emacs)
+;; ;;   (evil-define-key 'emacs treemacs-mode-map
+;; ;;     "h" 'treemacs-root-up
+;; ;;     "l" 'treemacs-root-down
+;; ;;     "J" 'treemacs-root-collapse
+;; ;;     "K" 'treemacs-root-expand
+;; ;;     "C-j" 'treemacs-select-next-window
+;; ;;     "C-k" 'treemacs-select-previous-window
+;; ;;     "C-h" 'evil-window-left
+;; ;;     "C-l" 'evil-window-right
+;; ;;     "q" 'treemacs-quit))
+
+;; (use-package magit :ensure t)
+;; (use-package treemacs :ensure t)
+;; (use-package treemacs-magit :ensure t)
+
+;; ;; (with-eval-after-load 'treemacs
+;; ;;   (defun my/treemacs-magit-setup ()
+;; ;;     "Set up Treemacs-Magit."
+;; ;;     (treemacs-load-theme)
+;; ;;     (treemacs-git-mode 'extended)
+;; ;;     (treemacs-follow-mode t)
+;; ;;     (treemacs-filewatch-mode t)
+;; ;;     (treemacs-fringe-indicator-mode t)
+;; ;;     (treemacs-set-scope-type 'Projects))
+;; ;;   (add-hook 'treemacs-mode-hook #'my/treemacs-magit-setup))
+
+;; ;; (setq magit-completing-read-function 'ivy-completing-read
+;; ;;       magit-repository-directories '(("~/projects" . 2))
+;; ;;       magit-diff-refine-hunk t
+;; ;;       magit-log-margin '(t "%Y-%m-%d %H:%M " magit-log-margin-width t 18))
+;; (require 'treemacs-magit)
+;; ;; (setq treemacs-magit--display-in-mode-line t)
+;; ;; (setq treemacs-magit--display-in-modeline t)
+(treemacs-load-theme "default")
 (message "================================================================================")
 (message "completed")
 (message "================================================================================")
