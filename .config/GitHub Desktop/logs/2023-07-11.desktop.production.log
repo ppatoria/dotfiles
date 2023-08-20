@@ -1,0 +1,29 @@
+2023-07-11T05:56:56.805Z - info: [ui] [AppStore] loading 1 repositories from store
+2023-07-11T05:56:56.810Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-07-11T05:56:56.910Z - info: [ui] [BranchPruner] No branches to prune.
+2023-07-11T05:56:57.159Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-07-11T05:56:57.160Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-07-11T05:56:57.197Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-07-11T05:56:57.287Z - info: [ui] Stats reported.
+2023-07-11T05:57:03.879Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-07-11T05:57:19.486Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-07-11T05:57:47.140Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/finra-exams' took 0.118s
+2023-07-11T05:57:56.076Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: finra-exams - ppatoria (has token)

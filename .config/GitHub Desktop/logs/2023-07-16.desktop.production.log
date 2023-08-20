@@ -1,0 +1,55 @@
+2023-07-16T00:37:46.445Z - info: [ui] [AppStore] loading 1 repositories from store
+2023-07-16T00:37:46.450Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-07-16T00:37:46.705Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-07-16T00:37:46.751Z - info: [ui] [BranchPruner] No branches to prune.
+2023-07-16T00:37:46.828Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-07-16T00:37:46.900Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-07-16T00:37:46.901Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-07-16T00:37:47.052Z - info: [ui] Stats reported.
+2023-07-16T01:05:47.023Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/ppatoria/dotfiles.git - ppatoria (has token)
+2023-07-16T01:06:13.558Z - info: [ui] Executing clone: git -c credential.helper= -c init.defaultBranch=main clone --recursive --progress -- https://github.com/ppatoria/dotfiles.git /home/ppatoria/Documents/dotfiles (took 26.307s)
+2023-07-16T01:06:13.567Z - info: [ui] [AppStore] adding repository at /home/ppatoria/Documents/dotfiles to store
+2023-07-16T01:06:13.678Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-07-16T01:06:13.805Z - info: [ui] [BranchPruner] Last prune took place 28 minutes ago - skipping
+2023-07-16T01:18:51.537Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 1.4s of which 0.0s paused, total 1.4s
+2023-07-16T01:22:31.982Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/dotfiles' took 1.045s
+2023-07-16T01:22:37.046Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - ppatoria (has token)
+2023-07-16T04:47:49.318Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.5s of which 0.0s paused, total 0.5s
+2023-07-16T05:06:13.913Z - info: [ui] [BranchPruner] Last prune took place 4 hours ago - skipping
+2023-07-16T06:16:40.488Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.4s of which 0.0s paused, total 0.4s
+2023-07-16T06:18:01.867Z - info: [ui] [AppStore.getAccountForRemoteURL] account found for remote: https://github.com/ppatoria/quick.git - ppatoria (has token)
+2023-07-16T06:18:02.245Z - info: [ui] [AppStore] adding repository at /home/ppatoria/dev/quick to store
+2023-07-16T06:18:02.540Z - info: [ui] [BranchPruner] Last prune took place 5 hours ago - skipping
+2023-07-16T06:18:02.952Z - info: [ui] [BranchPruner] No branches to prune.
+2023-07-16T06:59:05.433Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 3 repositories took 0.8s of which 0.0s paused, total 0.8s
+2023-07-16T06:59:58.894Z - info: [ui] [AppStore.getAccountForRemoteURL] no generic credentials found for 'git clone https://github.com/syl20bnr/spacemacs'
+2023-07-16T06:59:58.936Z - error: [ui] `git -c credential.helper= -c init.defaultBranch=main clone --recursive --progress -- git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d` exited with an unexpected code: 128.
+stderr:
+fatal: could not create leading directories of '~/.emacs.d': Permission denied
+
+2023-07-16T07:32:12.593Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 3 repositories took 0.5s of which 0.0s paused, total 0.5s
+2023-07-16T15:51:38.870Z - info: [ui] [AppStore] loading 3 repositories from store
+2023-07-16T15:51:38.875Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-07-16T15:51:38.914Z - info: [ui] [BranchPruner] Last prune took place 10 hours ago - skipping
+2023-07-16T15:51:39.148Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-07-16T15:51:39.148Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-07-16T15:51:39.332Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-07-16T15:54:51.736Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.4s of which 0.0s paused, total 0.4s

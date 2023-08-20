@@ -1,0 +1,17 @@
+2023-08-19T00:33:10.126Z - info: [ui] [BranchPruner] No branches to prune.
+2023-08-19T00:33:10.561Z - info: [ui] Stats reported.
+2023-08-19T00:35:19.318Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 2.733s)
+2023-08-19T01:07:02.442Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.607s)
+2023-08-19T01:07:03.587Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 1.127s)
+2023-08-19T01:21:50.821Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 1.2s of which 0.0s paused, total 1.2s
+2023-08-19T02:10:31.424Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.323s)
+2023-08-19T04:33:10.415Z - info: [ui] [BranchPruner] Last prune took place 4 hours ago - skipping
+2023-08-19T08:33:10.413Z - info: [ui] [BranchPruner] Last prune took place 8 hours ago - skipping
+2023-08-19T12:33:10.029Z - info: [ui] [BranchPruner] Last prune took place 12 hours ago - skipping
+2023-08-19T13:02:02.025Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 1.6s of which 33665.4s paused, total 33667.0s
+2023-08-19T13:02:48.360Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.7s of which 0.0s paused, total 0.7s
+2023-08-19T13:16:16.380Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 1.018s)
+2023-08-19T15:58:03.894Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.7s of which 0.0s paused, total 0.7s
+2023-08-19T16:33:10.028Z - info: [ui] [BranchPruner] Last prune took place 16 hours ago - skipping
+2023-08-19T20:33:10.029Z - info: [ui] [BranchPruner] Last prune took place 20 hours ago - skipping
+2023-08-19T22:46:34.782Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.256s)

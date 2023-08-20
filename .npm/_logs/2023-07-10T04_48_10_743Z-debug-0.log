@@ -1,0 +1,285 @@
+0 verbose cli /snap/node/7588/bin/node /snap/node/7588/bin/npm
+1 info using npm@9.5.1
+2 info using node@v18.16.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/snap/node/7588/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/ppatoria/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/snap/node/7588/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 0ms
+15 timing config:load Completed in 6ms
+16 timing npm:load:configload Completed in 6ms
+17 timing npm:load:mkdirpcache Completed in 1ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install mermaid.cli
+20 verbose argv "install" "--global" "mermaid.cli"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:display Completed in 2ms
+24 verbose logfile logs-max:10 dir:/home/ppatoria/.npm/_logs/2023-07-10T04_48_10_743Z-
+25 verbose logfile /home/ppatoria/.npm/_logs/2023-07-10T04_48_10_743Z-debug-0.log
+26 timing npm:load:logFile Completed in 3ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 14ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 4ms
+34 timing idealTree:userRequests Completed in 2ms
+35 silly idealTree buildDeps
+36 silly fetch manifest mermaid.cli@*
+37 http fetch GET 200 https://registry.npmjs.org/mermaid.cli 684ms (cache revalidated)
+38 silly placeDep ROOT mermaid.cli@0.5.1 OK for:  want: *
+39 silly fetch manifest chalk@^2.4.1
+40 silly fetch manifest commander@^2.15.1
+41 silly fetch manifest puppeteer@^1.4.0
+42 http fetch GET 200 https://registry.npmjs.org/chalk 39ms (cache revalidated)
+43 http fetch GET 200 https://registry.npmjs.org/commander 84ms (cache revalidated)
+44 http fetch GET 200 https://registry.npmjs.org/puppeteer 100ms (cache revalidated)
+45 timing idealTree:#root Completed in 814ms
+46 silly placeDep node_modules/mermaid.cli chalk@2.4.2 OK for: mermaid.cli@0.5.1 want: ^2.4.1
+47 silly placeDep node_modules/mermaid.cli commander@2.20.3 OK for: mermaid.cli@0.5.1 want: ^2.15.1
+48 silly placeDep node_modules/mermaid.cli puppeteer@1.20.0 OK for: mermaid.cli@0.5.1 want: ^1.4.0
+49 silly fetch manifest ansi-styles@^3.2.1
+50 silly fetch manifest escape-string-regexp@^1.0.5
+51 silly fetch manifest supports-color@^5.3.0
+52 silly fetch manifest debug@^4.1.0
+53 silly fetch manifest extract-zip@^1.6.6
+54 silly fetch manifest https-proxy-agent@^2.2.1
+55 silly fetch manifest mime@^2.0.3
+56 silly fetch manifest progress@^2.0.1
+57 silly fetch manifest proxy-from-env@^1.0.0
+58 silly fetch manifest rimraf@^2.6.1
+59 silly fetch manifest ws@^6.1.0
+60 http fetch GET 200 https://registry.npmjs.org/debug 44ms (cache revalidated)
+61 http fetch GET 200 https://registry.npmjs.org/supports-color 49ms (cache revalidated)
+62 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 58ms (cache revalidated)
+63 http fetch GET 200 https://registry.npmjs.org/ansi-styles 101ms (cache revalidated)
+64 http fetch GET 200 https://registry.npmjs.org/progress 104ms (cache revalidated)
+65 http fetch GET 200 https://registry.npmjs.org/mime 105ms (cache revalidated)
+66 http fetch GET 200 https://registry.npmjs.org/extract-zip 112ms (cache revalidated)
+67 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 117ms (cache revalidated)
+68 http fetch GET 200 https://registry.npmjs.org/ws 115ms (cache revalidated)
+69 http fetch GET 200 https://registry.npmjs.org/rimraf 125ms (cache revalidated)
+70 http fetch GET 200 https://registry.npmjs.org/proxy-from-env 522ms (cache revalidated)
+71 timing idealTree:node_modules/mermaid.cli Completed in 531ms
+72 silly placeDep node_modules/mermaid.cli ansi-styles@3.2.1 OK for: chalk@2.4.2 want: ^3.2.1
+73 silly placeDep node_modules/mermaid.cli escape-string-regexp@1.0.5 OK for: chalk@2.4.2 want: ^1.0.5
+74 silly placeDep node_modules/mermaid.cli supports-color@5.5.0 OK for: chalk@2.4.2 want: ^5.3.0
+75 silly fetch manifest color-convert@^1.9.0
+76 silly fetch manifest has-flag@^3.0.0
+77 http fetch GET 200 https://registry.npmjs.org/has-flag 406ms (cache revalidated)
+78 http fetch GET 200 https://registry.npmjs.org/color-convert 406ms (cache revalidated)
+79 timing idealTree:node_modules/mermaid.cli/node_modules/chalk Completed in 419ms
+80 silly placeDep node_modules/mermaid.cli color-convert@1.9.3 OK for: ansi-styles@3.2.1 want: ^1.9.0
+81 silly fetch manifest color-name@1.1.3
+82 http fetch GET 200 https://registry.npmjs.org/color-name 39ms (cache revalidated)
+83 timing idealTree:node_modules/mermaid.cli/node_modules/ansi-styles Completed in 42ms
+84 silly placeDep node_modules/mermaid.cli color-name@1.1.3 OK for: color-convert@1.9.3 want: 1.1.3
+85 timing idealTree:node_modules/mermaid.cli/node_modules/color-convert Completed in 3ms
+86 timing idealTree:node_modules/mermaid.cli/node_modules/color-name Completed in 0ms
+87 timing idealTree:node_modules/mermaid.cli/node_modules/commander Completed in 0ms
+88 timing idealTree:node_modules/mermaid.cli/node_modules/escape-string-regexp Completed in 0ms
+89 silly placeDep node_modules/mermaid.cli debug@4.3.4 OK for: puppeteer@1.20.0 want: ^4.1.0
+90 silly placeDep node_modules/mermaid.cli extract-zip@1.7.0 OK for: puppeteer@1.20.0 want: ^1.6.6
+91 silly placeDep node_modules/mermaid.cli https-proxy-agent@2.2.4 OK for: puppeteer@1.20.0 want: ^2.2.1
+92 silly placeDep node_modules/mermaid.cli mime@2.6.0 OK for: puppeteer@1.20.0 want: ^2.0.3
+93 silly placeDep node_modules/mermaid.cli progress@2.0.3 OK for: puppeteer@1.20.0 want: ^2.0.1
+94 silly placeDep node_modules/mermaid.cli proxy-from-env@1.1.0 OK for: puppeteer@1.20.0 want: ^1.0.0
+95 silly placeDep node_modules/mermaid.cli rimraf@2.7.1 OK for: puppeteer@1.20.0 want: ^2.6.1
+96 silly placeDep node_modules/mermaid.cli ws@6.2.2 OK for: puppeteer@1.20.0 want: ^6.1.0
+97 silly fetch manifest ms@2.1.2
+98 silly fetch manifest concat-stream@^1.6.2
+99 silly fetch manifest debug@^2.6.9
+100 silly fetch manifest mkdirp@^0.5.4
+101 silly fetch manifest yauzl@^2.10.0
+102 silly fetch manifest agent-base@^4.3.0
+103 silly fetch manifest debug@^3.1.0
+104 silly fetch manifest glob@^7.1.3
+105 silly fetch manifest async-limiter@~1.0.0
+106 http fetch GET 200 https://registry.npmjs.org/ms 49ms (cache revalidated)
+107 http fetch GET 200 https://registry.npmjs.org/concat-stream 49ms (cache revalidated)
+108 http fetch GET 200 https://registry.npmjs.org/async-limiter 56ms (cache revalidated)
+109 http fetch GET 200 https://registry.npmjs.org/yauzl 60ms (cache revalidated)
+110 http fetch GET 200 https://registry.npmjs.org/mkdirp 61ms (cache revalidated)
+111 http fetch GET 200 https://registry.npmjs.org/agent-base 60ms (cache revalidated)
+112 http fetch GET 200 https://registry.npmjs.org/glob 60ms (cache revalidated)
+113 timing idealTree:node_modules/mermaid.cli/node_modules/puppeteer Completed in 79ms
+114 silly placeDep node_modules/mermaid.cli ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+115 timing idealTree:node_modules/mermaid.cli/node_modules/debug Completed in 1ms
+116 silly placeDep node_modules/mermaid.cli concat-stream@1.6.2 OK for: extract-zip@1.7.0 want: ^1.6.2
+117 silly placeDep node_modules/mermaid.cli/node_modules/extract-zip debug@2.6.9 OK for: extract-zip@1.7.0 want: ^2.6.9
+118 silly placeDep node_modules/mermaid.cli mkdirp@0.5.6 OK for: extract-zip@1.7.0 want: ^0.5.4
+119 silly placeDep node_modules/mermaid.cli yauzl@2.10.0 OK for: extract-zip@1.7.0 want: ^2.10.0
+120 silly fetch manifest buffer-from@^1.0.0
+121 silly fetch manifest inherits@^2.0.3
+122 silly fetch manifest readable-stream@^2.2.2
+123 silly fetch manifest typedarray@^0.0.6
+124 silly fetch manifest ms@2.0.0
+125 silly fetch manifest minimist@^1.2.6
+126 silly fetch manifest fd-slicer@~1.1.0
+127 silly fetch manifest buffer-crc32@~0.2.3
+128 http fetch GET 200 https://registry.npmjs.org/inherits 46ms (cache revalidated)
+129 http fetch GET 200 https://registry.npmjs.org/buffer-from 47ms (cache revalidated)
+130 http fetch GET 200 https://registry.npmjs.org/minimist 46ms (cache revalidated)
+131 http fetch GET 200 https://registry.npmjs.org/buffer-crc32 46ms (cache revalidated)
+132 http fetch GET 200 https://registry.npmjs.org/readable-stream 50ms (cache revalidated)
+133 http fetch GET 200 https://registry.npmjs.org/fd-slicer 51ms (cache revalidated)
+134 http fetch GET 200 https://registry.npmjs.org/typedarray 479ms (cache revalidated)
+135 timing idealTree:node_modules/mermaid.cli/node_modules/extract-zip Completed in 485ms
+136 silly placeDep node_modules/mermaid.cli buffer-from@1.1.2 OK for: concat-stream@1.6.2 want: ^1.0.0
+137 silly placeDep node_modules/mermaid.cli inherits@2.0.4 OK for: concat-stream@1.6.2 want: ^2.0.3
+138 silly placeDep node_modules/mermaid.cli readable-stream@2.3.8 OK for: concat-stream@1.6.2 want: ^2.2.2
+139 silly placeDep node_modules/mermaid.cli typedarray@0.0.6 OK for: concat-stream@1.6.2 want: ^0.0.6
+140 silly fetch manifest core-util-is@~1.0.0
+141 silly fetch manifest isarray@~1.0.0
+142 silly fetch manifest process-nextick-args@~2.0.0
+143 silly fetch manifest safe-buffer@~5.1.1
+144 silly fetch manifest string_decoder@~1.1.1
+145 silly fetch manifest util-deprecate@~1.0.1
+146 http fetch GET 200 https://registry.npmjs.org/core-util-is 55ms (cache revalidated)
+147 http fetch GET 200 https://registry.npmjs.org/string_decoder 53ms (cache revalidated)
+148 http fetch GET 200 https://registry.npmjs.org/util-deprecate 52ms (cache revalidated)
+149 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 56ms (cache revalidated)
+150 http fetch GET 200 https://registry.npmjs.org/safe-buffer 55ms (cache revalidated)
+151 http fetch GET 200 https://registry.npmjs.org/isarray 58ms (cache revalidated)
+152 timing idealTree:node_modules/mermaid.cli/node_modules/concat-stream Completed in 68ms
+153 timing idealTree:node_modules/mermaid.cli/node_modules/buffer-from Completed in 0ms
+154 silly placeDep node_modules/mermaid.cli agent-base@4.3.0 OK for: https-proxy-agent@2.2.4 want: ^4.3.0
+155 silly placeDep node_modules/mermaid.cli/node_modules/https-proxy-agent debug@3.2.7 OK for: https-proxy-agent@2.2.4 want: ^3.1.0
+156 silly fetch manifest es6-promisify@^5.0.0
+157 http fetch GET 200 https://registry.npmjs.org/es6-promisify 37ms (cache revalidated)
+158 timing idealTree:node_modules/mermaid.cli/node_modules/https-proxy-agent Completed in 41ms
+159 silly placeDep node_modules/mermaid.cli es6-promisify@5.0.0 OK for: agent-base@4.3.0 want: ^5.0.0
+160 silly fetch manifest es6-promise@^4.0.3
+161 http fetch GET 200 https://registry.npmjs.org/es6-promise 36ms (cache revalidated)
+162 timing idealTree:node_modules/mermaid.cli/node_modules/agent-base Completed in 40ms
+163 silly placeDep node_modules/mermaid.cli es6-promise@4.2.8 OK for: es6-promisify@5.0.0 want: ^4.0.3
+164 timing idealTree:node_modules/mermaid.cli/node_modules/es6-promisify Completed in 2ms
+165 timing idealTree:node_modules/mermaid.cli/node_modules/es6-promise Completed in 0ms
+166 timing idealTree:node_modules/mermaid.cli/node_modules/inherits Completed in 0ms
+167 timing idealTree:node_modules/mermaid.cli/node_modules/mime Completed in 0ms
+168 silly placeDep node_modules/mermaid.cli minimist@1.2.8 OK for: mkdirp@0.5.6 want: ^1.2.6
+169 timing idealTree:node_modules/mermaid.cli/node_modules/mkdirp Completed in 1ms
+170 timing idealTree:node_modules/mermaid.cli/node_modules/minimist Completed in 0ms
+171 timing idealTree:node_modules/mermaid.cli/node_modules/ms Completed in 0ms
+172 timing idealTree:node_modules/mermaid.cli/node_modules/progress Completed in 0ms
+173 timing idealTree:node_modules/mermaid.cli/node_modules/proxy-from-env Completed in 0ms
+174 silly placeDep node_modules/mermaid.cli core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+175 silly placeDep node_modules/mermaid.cli isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+176 silly placeDep node_modules/mermaid.cli process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+177 silly placeDep node_modules/mermaid.cli safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+178 silly placeDep node_modules/mermaid.cli string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+179 silly placeDep node_modules/mermaid.cli util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+180 timing idealTree:node_modules/mermaid.cli/node_modules/readable-stream Completed in 8ms
+181 timing idealTree:node_modules/mermaid.cli/node_modules/core-util-is Completed in 0ms
+182 timing idealTree:node_modules/mermaid.cli/node_modules/isarray Completed in 0ms
+183 timing idealTree:node_modules/mermaid.cli/node_modules/process-nextick-args Completed in 0ms
+184 silly placeDep node_modules/mermaid.cli glob@7.2.3 OK for: rimraf@2.7.1 want: ^7.1.3
+185 silly fetch manifest fs.realpath@^1.0.0
+186 silly fetch manifest inflight@^1.0.4
+187 silly fetch manifest minimatch@^3.1.1
+188 silly fetch manifest once@^1.3.0
+189 silly fetch manifest path-is-absolute@^1.0.0
+190 http fetch GET 200 https://registry.npmjs.org/once 54ms (cache revalidated)
+191 http fetch GET 200 https://registry.npmjs.org/fs.realpath 57ms (cache revalidated)
+192 http fetch GET 200 https://registry.npmjs.org/minimatch 57ms (cache revalidated)
+193 http fetch GET 200 https://registry.npmjs.org/inflight 61ms (cache revalidated)
+194 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 60ms (cache revalidated)
+195 timing idealTree:node_modules/mermaid.cli/node_modules/rimraf Completed in 65ms
+196 silly placeDep node_modules/mermaid.cli fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+197 silly placeDep node_modules/mermaid.cli inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+198 silly placeDep node_modules/mermaid.cli minimatch@3.1.2 OK for: glob@7.2.3 want: ^3.1.1
+199 silly placeDep node_modules/mermaid.cli once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+200 silly placeDep node_modules/mermaid.cli path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+201 silly fetch manifest wrappy@1
+202 silly fetch manifest brace-expansion@^1.1.7
+203 http fetch GET 200 https://registry.npmjs.org/wrappy 56ms (cache revalidated)
+204 http fetch GET 200 https://registry.npmjs.org/brace-expansion 59ms (cache revalidated)
+205 timing idealTree:node_modules/mermaid.cli/node_modules/glob Completed in 64ms
+206 timing idealTree:node_modules/mermaid.cli/node_modules/fs.realpath Completed in 0ms
+207 silly placeDep node_modules/mermaid.cli wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+208 timing idealTree:node_modules/mermaid.cli/node_modules/inflight Completed in 3ms
+209 silly placeDep node_modules/mermaid.cli brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+210 silly fetch manifest balanced-match@^1.0.0
+211 silly fetch manifest concat-map@0.0.1
+212 http fetch GET 200 https://registry.npmjs.org/balanced-match 43ms (cache revalidated)
+213 http fetch GET 200 https://registry.npmjs.org/concat-map 44ms (cache revalidated)
+214 timing idealTree:node_modules/mermaid.cli/node_modules/minimatch Completed in 47ms
+215 silly placeDep node_modules/mermaid.cli balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+216 silly placeDep node_modules/mermaid.cli concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+217 timing idealTree:node_modules/mermaid.cli/node_modules/brace-expansion Completed in 4ms
+218 timing idealTree:node_modules/mermaid.cli/node_modules/balanced-match Completed in 0ms
+219 timing idealTree:node_modules/mermaid.cli/node_modules/concat-map Completed in 0ms
+220 timing idealTree:node_modules/mermaid.cli/node_modules/once Completed in 1ms
+221 timing idealTree:node_modules/mermaid.cli/node_modules/path-is-absolute Completed in 0ms
+222 timing idealTree:node_modules/mermaid.cli/node_modules/safe-buffer Completed in 0ms
+223 timing idealTree:node_modules/mermaid.cli/node_modules/string_decoder Completed in 0ms
+224 silly placeDep node_modules/mermaid.cli has-flag@3.0.0 OK for: supports-color@5.5.0 want: ^3.0.0
+225 timing idealTree:node_modules/mermaid.cli/node_modules/supports-color Completed in 1ms
+226 timing idealTree:node_modules/mermaid.cli/node_modules/has-flag Completed in 0ms
+227 timing idealTree:node_modules/mermaid.cli/node_modules/typedarray Completed in 0ms
+228 timing idealTree:node_modules/mermaid.cli/node_modules/util-deprecate Completed in 0ms
+229 timing idealTree:node_modules/mermaid.cli/node_modules/wrappy Completed in 0ms
+230 silly placeDep node_modules/mermaid.cli async-limiter@1.0.1 OK for: ws@6.2.2 want: ~1.0.0
+231 timing idealTree:node_modules/mermaid.cli/node_modules/ws Completed in 1ms
+232 timing idealTree:node_modules/mermaid.cli/node_modules/async-limiter Completed in 0ms
+233 silly placeDep node_modules/mermaid.cli buffer-crc32@0.2.13 OK for: yauzl@2.10.0 want: ~0.2.3
+234 silly placeDep node_modules/mermaid.cli fd-slicer@1.1.0 OK for: yauzl@2.10.0 want: ~1.1.0
+235 silly fetch manifest pend@~1.2.0
+236 http fetch GET 200 https://registry.npmjs.org/pend 36ms (cache revalidated)
+237 timing idealTree:node_modules/mermaid.cli/node_modules/yauzl Completed in 38ms
+238 timing idealTree:node_modules/mermaid.cli/node_modules/buffer-crc32 Completed in 0ms
+239 silly placeDep node_modules/mermaid.cli pend@1.2.0 OK for: fd-slicer@1.1.0 want: ~1.2.0
+240 timing idealTree:node_modules/mermaid.cli/node_modules/fd-slicer Completed in 2ms
+241 timing idealTree:node_modules/mermaid.cli/node_modules/pend Completed in 0ms
+242 silly placeDep node_modules/mermaid.cli/node_modules/extract-zip ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+243 timing idealTree:node_modules/mermaid.cli/node_modules/extract-zip/node_modules/debug Completed in 3ms
+244 timing idealTree:node_modules/mermaid.cli/node_modules/extract-zip/node_modules/ms Completed in 0ms
+245 timing idealTree:node_modules/mermaid.cli/node_modules/https-proxy-agent/node_modules/debug Completed in 0ms
+246 timing idealTree:buildDeps Completed in 2774ms
+247 timing idealTree:fixDepFlags Completed in 1ms
+248 timing idealTree Completed in 2783ms
+249 timing reify:loadTrees Completed in 2785ms
+250 timing reify:diffTrees Completed in 2ms
+251 silly reify moves {}
+252 timing reify:retireShallow Completed in 1ms
+253 timing reify:rollback:createSparse Completed in 0ms
+254 timing reify:rollback:retireShallow Completed in 0ms
+255 timing command:install Completed in 2797ms
+256 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/mermaid.cli'
+257 verbose cwd /etc/apt/sources.list.d
+258 verbose Linux 6.2.0-23-generic
+259 verbose node v18.16.1
+260 verbose npm  v9.5.1
+261 error code EACCES
+262 error syscall mkdir
+263 error path /usr/local/lib/node_modules/mermaid.cli
+264 error errno -13
+265 error [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/mermaid.cli'] {
+265 error   errno: -13,
+265 error   code: 'EACCES',
+265 error   syscall: 'mkdir',
+265 error   path: '/usr/local/lib/node_modules/mermaid.cli'
+265 error }
+266 error
+266 error The operation was rejected by your operating system.
+266 error It is likely you do not have the permissions to access this file as the current user
+266 error
+266 error If you believe this might be a permissions issue, please double-check the
+266 error permissions of the file and its containing directories, or try running
+266 error the command again as root/Administrator.
+267 verbose exit -13
+268 timing npm Completed in 2822ms
+269 verbose unfinished npm timer reify 1688964490768
+270 verbose unfinished npm timer reify:createSparse 1688964493559
+271 verbose code -13
+272 error A complete log of this run can be found in:
+272 error     /home/ppatoria/.npm/_logs/2023-07-10T04_48_10_743Z-debug-0.log

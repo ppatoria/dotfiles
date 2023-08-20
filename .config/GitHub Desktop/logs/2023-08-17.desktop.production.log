@@ -1,0 +1,116 @@
+2023-08-17T00:33:09.713Z - info: [ui] [AppStore] loading 3 repositories from store
+2023-08-17T00:33:09.718Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-08-17T00:33:10.017Z - info: [ui] [BranchPruner] No branches to prune.
+2023-08-17T00:33:10.077Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-08-17T00:33:10.079Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-08-17T00:33:10.112Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-08-17T00:33:10.232Z - info: [ui] Stats reported.
+2023-08-17T00:33:21.831Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T00:35:51.891Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.5s of which 0.0s paused, total 0.5s
+2023-08-17T01:05:07.031Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T01:07:35.491Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T01:07:35.851Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.5s of which 0.0s paused, total 0.5s
+2023-08-17T01:07:43.339Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/finra-exams' took 0.272s
+2023-08-17T02:08:26.242Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T04:33:10.045Z - info: [ui] [BranchPruner] Last prune took place 4 hours ago - skipping
+2023-08-17T08:33:10.020Z - info: [ui] [BranchPruner] Last prune took place 8 hours ago - skipping
+2023-08-17T12:09:57.599Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T12:33:10.025Z - info: [ui] [BranchPruner] Last prune took place 12 hours ago - skipping
+2023-08-17T14:16:38.219Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T14:48:17.899Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T16:33:10.020Z - info: [ui] [BranchPruner] Last prune took place 16 hours ago - skipping
+2023-08-17T17:26:37.592Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T20:23:34.175Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.5s of which 0.0s paused, total 0.5s
+2023-08-17T20:33:10.021Z - info: [ui] [BranchPruner] Last prune took place 20 hours ago - skipping
+2023-08-17T21:08:15.646Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-08-17T21:39:55.439Z - error: [ui] Could not load old contents for syntax highlighting
+RangeError [ERR_CHILD_PROCESS_STDIO_MAXBUFFER]: stdout maxBuffer length exceeded
+    at __node_internal_captureLargerStackTrace (node:internal/errors:464:5)
+    at new NodeError (node:internal/errors:371:5)
+    at Socket.onChildStdout (node:child_process:470:14)
+    at Socket.emit (node:events:538:35)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:285:11)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)

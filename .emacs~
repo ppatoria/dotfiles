@@ -1,0 +1,37 @@
+;; Load the init.el file located in the ~/.emacs.d directory
+(load-file "~/.emacs.d/init.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(cua-mode t)
+ '(custom-safe-themes
+   '("00445e6f15d31e9afaa23ed0d765850e9cd5e929be5e8e63b114a3346236c44c"
+     "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5"
+     default))
+ '(debug-on-error t)
+ '(display-time-mode t)
+ '(global-display-line-numbers-mode t)
+ '(indicate-buffer-boundaries 'left)
+ '(package-selected-packages
+   '(treemacs-magit treemacs-evil treemacs-projectile myeaf
+		    treemacs-tab-bar leaf eaf
+		    emacs-application-framework esh-autosuggest
+		    git-modes magit sudo-edit popwin org-plantuml
+		    vterm org-plus-contrib org-table-color
+		    org-tag-beautify org-modern org-superstar
+		    org-graph-view ess org-ai pyvenv helm-rg
+		    helm-projectile dap-python dap-mode lsp-ui
+		    lsp-mode treeview solarized-theme projectile
+		    pcre2el helm evil bind-map))
+ '(size-indication-mode t)
+ '(tab-bar-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight regular :height 120 :width normal)))))

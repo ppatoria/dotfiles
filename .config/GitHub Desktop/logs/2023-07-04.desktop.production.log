@@ -1,0 +1,12 @@
+2023-07-04T00:27:05.867Z - info: [ui] [AppStore] loading 1 repositories from store
+2023-07-04T00:27:05.895Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-07-04T00:27:06.244Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-07-04T00:27:07.550Z - error: [ui] Could not load new contents for syntax highlighting
+Error: ENOENT: no such file or directory, open '/home/ppatoria/Documents/finra-exams/57/.#57-summary2.org'
+2023-07-04T00:27:07.586Z - info: [ui] [BranchPruner] No branches to prune.
+2023-07-04T00:27:07.851Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-07-04T00:27:07.864Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-07-04T00:27:08.931Z - info: [ui] Stats reported.
+2023-07-04T00:33:29.122Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/finra-exams' took 0.984s
+2023-07-04T00:33:40.458Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: finra-exams - ppatoria (has token)
+2023-07-04T00:33:43.856Z - info: [ui] Executing push: git -c credential.helper= push origin master:master --progress (took 3.363s)

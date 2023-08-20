@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/google-chrome-stable
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=chrome
+Name=chrome
+Comment[en_US]=google chrome
+Comment=google chrome

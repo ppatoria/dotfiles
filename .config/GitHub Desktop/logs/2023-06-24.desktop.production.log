@@ -1,0 +1,7 @@
+2023-06-24T23:12:31.652Z - info: [ui] [AppStore] loading 1 repositories from store
+2023-06-24T23:12:31.659Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-06-24T23:12:31.777Z - info: [ui] [BranchPruner] No branches to prune.
+2023-06-24T23:12:32.037Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-06-24T23:12:32.116Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-06-24T23:12:32.118Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-06-24T23:12:32.266Z - info: [ui] Stats reported.

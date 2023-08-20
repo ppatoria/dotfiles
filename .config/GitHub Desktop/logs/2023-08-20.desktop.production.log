@@ -1,0 +1,53 @@
+2023-08-20T00:33:10.028Z - info: [ui] [BranchPruner] Last prune took place yesterday - skipping
+2023-08-20T02:28:19.420Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 1.230s)
+2023-08-20T04:33:10.078Z - info: [ui] [BranchPruner] No branches to prune.
+2023-08-20T04:33:10.219Z - info: [ui] Stats reported.
+2023-08-20T05:16:55.357Z - info: [ui] [AppStore] loading 3 repositories from store
+2023-08-20T05:16:55.363Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-08-20T05:16:55.403Z - info: [ui] [BranchPruner] Last prune took place 44 minutes ago - skipping
+2023-08-20T05:16:55.684Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-08-20T05:16:55.827Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-08-20T05:16:55.828Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-08-20T17:19:59.559Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/finra-exams' took 0.206s
+2023-08-20T17:20:04.957Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: finra-exams - ppatoria (has token)
+2023-08-20T17:20:13.682Z - info: [ui] Executing push: git -c credential.helper= push origin master:master --progress (took 8.708s)
+2023-08-20T18:34:08.821Z - info: [ui] [AppStore] loading 3 repositories from store
+2023-08-20T18:34:08.826Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-08-20T18:34:08.856Z - info: [ui] [BranchPruner] Last prune took place 14 hours ago - skipping
+2023-08-20T18:34:09.044Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-08-20T18:34:09.051Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-08-20T18:34:09.088Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-08-20T18:39:24.747Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.4s of which 0.0s paused, total 0.4s
+2023-08-20T19:07:38.381Z - info: [ui] [AppStore] loading 3 repositories from store
+2023-08-20T19:07:38.387Z - info: [ui] [AppStore] found account: ppatoria (ppatoria)
+2023-08-20T19:07:38.418Z - info: [ui] [BranchPruner] Last prune took place 15 hours ago - skipping
+2023-08-20T19:07:38.627Z - info: [ui] launching: 3.1.1-linux1 (Linux 6.2.0-23-generic)
+2023-08-20T19:07:38.629Z - info: [ui] execPath: '/usr/lib/github-desktop/github-desktop'
+2023-08-20T19:07:38.654Z - info: [ui] Subscribed 'ppatoria' to Alive channel
+2023-08-20T19:08:19.091Z - info: [ui] [BranchPruner] No branches to prune.
+2023-08-20T19:08:19.227Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.2s of which 0.0s paused, total 0.2s
+2023-08-20T19:17:41.573Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/dotfiles' took 0.733s
+2023-08-20T19:17:45.290Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: dotfiles - ppatoria (has token)
+2023-08-20T19:17:49.339Z - info: [ui] Executing push: git -c credential.helper= push origin main:main --progress (took 4.031s)
+2023-08-20T19:25:53.309Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.3s of which 0.0s paused, total 0.3s
+2023-08-20T19:40:41.869Z - error: [ui] Could not load new contents for syntax highlighting
+Error: ENOENT: no such file or directory, open '/home/ppatoria/Documents/dotfiles/*message*-20230716-004334'
+2023-08-20T19:57:33.546Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.5s of which 670.4s paused, total 670.9s
+2023-08-20T19:57:57.066Z - error: [ui] `git commit -F -` exited with an unexpected code: 128.
+stderr:
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ppatoria@ppatoria.(none)')
+
+2023-08-20T19:57:57.067Z - info: [ui] [Timing] Action 'create commit' for 'ppatoria/dotfiles' took 0.327s
+2023-08-20T20:01:25.321Z - info: [ui] [RepositoryIndicatorUpdater]: Refreshing sidebar indicators for 2 repositories took 0.3s of which 0.0s paused, total 0.3s
